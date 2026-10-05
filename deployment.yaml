@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
         - name: kubedemoapp
-          image: udaya893/sample:kubeimage1 # use your Docker Hub image
+          image: udaya893/sample:kubeimage1
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
